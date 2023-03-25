@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.newCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width:100%;
+  }
+  .allcardsItems{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2px;
+  }
+  @media screen and (max-width: 768px) {
+    .newCard {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .newCard {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .allcardsItems{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 6px;
+      }
+  }
+  .cardOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 480px) {
+    .allcardsItems{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 6px;
+      }
+  }
+  .cardPriceBeforeDiscount{
+    text-decoration: line-through;
+  }
+  img{
+    position: relative;
+    object-fit:fill;
+    width:90%;
+    height:100%;
+  }
+  .addLocal{
+    border: 2px solid green;
+    border-radius: 2px;
+    box-shadow: 1px 2px 2px green;
+    color:honeydew;
+    background: transparent;
+    background-color: rgb(19, 164, 99);
+    padding: 2px;
+  }
+  .addLocal:hover{
+    background-color: green;
+  }
+  .navabar{
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+  }
+  .cartPage{
+    position: absolute;
+    right:5px;
+    color:darkblue;
+    font-weight: 800;
+  }
+  .titlePage{
+    color:purple;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    padding: 5px;
+  }
+  .addToCart{
+    background-color: green;
+    color:rgb(222, 222, 243);
+    border:2px solid green;
+    box-shadow: 2px 2px 2px green;
+    border-radius: 2px;
+    padding:5px;
+  }
+
+  .alertInfo {
+    background-color: #6285a1;
+    border: 1px solid #a8d3ff;
+    color: #f2f5f8;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    padding: 8px;
+    z-index: 999;
+    border-radius: 8px;
+  }
+  

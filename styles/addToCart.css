@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  .itemsComponent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2px;
+  }
+  @media screen and (max-width: 768px) {
+    .itemsComponent {
+      padding: 10px;
+    }
+  }
+  .newCard{
+    border:2px solid rgb(211, 195, 195);
+  }
+  @media screen and (max-width: 600px) {
+    .newCard {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .itemsComponent{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 6px;
+      }
+  }
+  .cardOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 480px) {
+    .itemsComponent{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 6px;
+      }
+  }
+  .cardPriceBeforeDiscount{
+    text-decoration: line-through;
+  }
+  img{
+    position: relative;
+    object-fit:fill;
+    width:90%;
+    height:100%;
+  }
+.removeFromCart{
+  background-color: rgb(0, 19, 128);
+    color:rgb(222, 222, 243);
+    border:2px solid rgb(0, 19, 128);
+    box-shadow: 2px 2px 2px rgb(4, 0, 128);
+    border-radius: 2px;
+    padding:5px;
+    margin:2px;
+}
+
+.titlePage{
+color:purple;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-transform: capitalize;
+padding: 5px;
+}
+.alertInfo {
+  background-color: #6285a1;
+  border: 1px solid #a8d3ff;
+  color: #f2f5f8;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  padding: 8px;
+  z-index: 999;
+  border-radius: 8px;
+}
